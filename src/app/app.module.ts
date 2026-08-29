@@ -13,12 +13,16 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ProductComponent } from './product/product.component';
+import { CartComponent } from './cart/cart.component';
+import { TrackOrderComponent } from './track-order/track-order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
-    ProductComponent
+    ProductComponent,
+    CartComponent,
+    TrackOrderComponent
   ],
   imports: [
     BrowserModule,

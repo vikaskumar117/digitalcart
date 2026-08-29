@@ -26,7 +26,7 @@
   }
 
   .toolbar {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -36,6 +36,8 @@
     background-color: #1976d2;
     color: white;
     font-weight: 600;
+    width: 100%;
+    z-index: 10;
   }
 
   a,

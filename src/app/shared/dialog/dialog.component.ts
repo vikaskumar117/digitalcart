@@ -13,7 +13,7 @@ export class DialogComponent {
   @Input() type: any;
   @Input() title: any;
   @Input() buttonOK: any;
-  @Input() buttonCancle: any;
+  @Input() buttonCancel: any;
   quantity: number;
   subTotal: number;
 

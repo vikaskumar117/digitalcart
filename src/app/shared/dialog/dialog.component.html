@@ -1,6 +1,6 @@
 <div class="modal-header">
     <h5 class="modal-title"><b>{{title}}</b></h5>
-    <button aria-label="Close" class="close" type="button" (click)="close('cancle')"><span aria-hidden="true">×</span></button>
+    <button aria-label="Close" class="close" type="button" (click)="close('Cancel')"><span aria-hidden="true">×</span></button>
   </div>
 
   <!-- <div class="modal-body">
@@ -33,7 +33,7 @@
   <div class="modal-footer text-center">
       <button type="button" class="btn btn-primary text-center" aria-label="click button to ok"
             (click)="close('ok')">{{buttonOK}}</button>
-       <button *ngIf="buttonCancle" type="button" class="btn btn-secondary text-center" aria-label="click button to Cancel"
-            (click)="close('cancle')">{{buttonCancle}}</button>
+       <button *ngIf="buttonCancel" type="button" class="btn btn-secondary text-center" aria-label="click button to Cancel"
+            (click)="close('Cancel')">{{buttonCancel}}</button>
     </div>
 

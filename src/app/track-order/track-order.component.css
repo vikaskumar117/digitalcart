@@ -1,0 +1,33 @@
+.empty-state {
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.track-box {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.timeline li {
+  padding: 10px 0;
+  border-left: 3px solid #ddd;
+  padding-left: 12px;
+  margin-left: 8px;
+  color: #666;
+}
+
+.timeline li.active {
+  color: #198754;
+  border-left-color: #198754;
+  font-weight: 600;
+}

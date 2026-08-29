@@ -4,6 +4,7 @@ import { DialogComponent } from 'src/app/shared/dialog/dialog.component';
 import { LaptopDetail } from 'src/Model/model';
 import { LaptopService } from '../home/laptop-service.service';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { CartItem, CartService } from '../shared/cart.service';
 
 @Component({
   selector: 'app-product',
@@ -16,7 +17,7 @@ export class ProductComponent implements OnInit {
   lstLaptop: LaptopDetail[] = [];
   config: any;
 
-  constructor(private modal: NgbModal, private laptopService: LaptopService) {
+  constructor(private modal: NgbModal, private laptopService: LaptopService, private cartService: CartService) {
     this.config = {
       id: 'basicPaginate',
       itemsPerPage: 3,
@@ -53,19 +54,36 @@ export class ProductComponent implements OnInit {
 
   addToCartClick(value: any, src: any): void {
     const laptop = new LaptopDetail();
-    laptop.Name = '₹ ' + value;
-    laptop.Price = value;
-    laptop.Description = 'This is the description of selected item.';
-    laptop.Quantity = 1;
-    laptop.Src = src;
+    const item: CartItem = {
+      id: `${Date.now()}-${Math.random()}`,
+      name: laptop.Name || 'Laptop',
+      price: Number(value),
+      description: 'This is the description of selected item.',
+      quantity: 1,
+      src: src
+    };
+
+    const actualItem = this.lstLaptop.find((x: LaptopDetail) => x.Price === value || x.Src === src);
+    if (actualItem) {
+      item.name = actualItem.Name;
+      item.description = actualItem.Description;
+    }
+
+    this.cartService.addToCart(item);
 
     this.res = this.openModel(
       'AppComponent',
-      laptop,
+      {
+        ...item,
+        Name: item.name,
+        Price: String(item.price),
+        Quantity: item.quantity,
+        Src: item.src
+      },
       'AddToCart',
       'Cart Items',
       'OK',
-      'Cancle'
+      'Cancel'
     );
   }
 
@@ -80,7 +98,7 @@ export class ProductComponent implements OnInit {
     modalRef.componentInstance.buttonOK = 'OK';
 
     if (button2txt !== '') {
-      modalRef.componentInstance.buttonCancle = button2txt;
+      modalRef.componentInstance.buttonCancel = button2txt;
     }
 
     modalRef.result.then((response: any) => {

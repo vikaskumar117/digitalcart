@@ -1,4 +1,4 @@
-export class MakhanaDetail{
+export class LaptopDetail{
     Name: string = "";
     Price: string = "";
     Description:string = "";

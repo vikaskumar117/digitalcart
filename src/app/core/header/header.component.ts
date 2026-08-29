@@ -1,17 +1,25 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { SidebarComponent } from 'src/app/sidebar/sidebar/sidebar.component';
+import { CartService } from 'src/app/shared/cart.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css'],
+    standalone: false
 })
 export class HeaderComponent implements OnInit {
   @ViewChild('sidebar') sidebar!: SidebarComponent;
-  constructor(private router: Router) {}
+  cartCount = 0;
 
-  ngOnInit(): void {}
+  constructor(private router: Router, private cartService: CartService) {}
+
+  ngOnInit(): void {
+    this.cartService.cart$.subscribe(items => {
+      this.cartCount = items.reduce((sum, item) => sum + item.quantity, 0);
+    });
+  }
 
   openSideBarClick() {
     console.log('clicked');
@@ -23,6 +31,15 @@ export class HeaderComponent implements OnInit {
 
   contactUs() {
     this.router.navigate(['/contactus']);
+  }
+  cart(){
+    this.router.navigate(['/cart']);
+  }
+  trackOrder(){
+    this.router.navigate(['/track-order']);
+  }
+  products() {
+    this.router.navigate(['/products']);
   }
   home() {
     this.router.navigate(['/']);

@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
-  selector: 'app-dialog',
-  templateUrl: './dialog.component.html',
-  styleUrls: ['./dialog.component.css']
+    selector: 'app-dialog',
+    templateUrl: './dialog.component.html',
+    styleUrls: ['./dialog.component.css'],
+    standalone: false
 })
 export class DialogComponent {
    //constructor() {}
@@ -13,7 +14,7 @@ export class DialogComponent {
   @Input() type: any;
   @Input() title: any;
   @Input() buttonOK: any;
-  @Input() buttonCancle: any;
+  @Input() buttonCancel: any;
   quantity: number;
   subTotal: number;
 

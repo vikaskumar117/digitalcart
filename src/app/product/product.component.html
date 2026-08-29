@@ -1,0 +1,23 @@
+<div class="container home-container">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">&#64;</span>
+        </div>
+        <input type="text" id="SearchProduct" (change)="search($event)" class="form-control" placeholder="Search a product by name">
+      </div>
+
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let item of lstLaptop | paginate: config; let i = index">
+          <img height="100px; width:100px;" [src]="item.Src" class="card-img-top" alt="Laptop image"/>
+          <div class="card-body">
+          <h5 class="card-title">{{item.Name}}</h5>
+          <p class="card-text">{{item.Description}}</p>
+          <button type="button" (click)="addToCartClick(item.Price, item.Src)" class="btn btn-success">Add to Cart</button>
+          </div><br/>
+      </div>
+    </div>
+
+    <div class="pagination-wrap">
+      <pagination-controls id="basicPaginate" (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+</div>

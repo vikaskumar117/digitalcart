@@ -1,0 +1,23 @@
+<div class="container py-4">
+  <h3>Track Order</h3>
+
+  <div *ngIf="!order" class="empty-state">
+    <p>No order placed yet.</p>
+  </div>
+
+  <div *ngIf="order" class="track-box">
+    <p><strong>Order ID:</strong> {{ order.orderId }}</p>
+    <p><strong>Transaction ID:</strong> {{ order.transactionId }}</p>
+    <p><strong>Status:</strong> {{ order.status }}</p>
+    <p><strong>Expected delivery:</strong> {{ order.expectedDelivery }}</p>
+
+    <ul class="timeline">
+      <li [class.active]="order.status === 'Order is awaiting for approval.'">Order is awaiting for approval.</li>
+      <li [class.active]="order.status === 'Order approved'">Order approved</li>
+      <li [class.active]="order.status === 'Item placed'">Item placed</li>
+      <li [class.active]="order.status === 'Order dispatched'">Order dispatched</li>
+      <li [class.active]="order.status === 'Order is on the way.'">Order is on the way.</li>
+      <li [class.active]="order.status === 'Order delivered'">Order delivered</li>
+    </ul>
+  </div>
+</div>

@@ -12,6 +12,7 @@ import { CartService } from 'src/app/shared/cart.service';
 export class HeaderComponent implements OnInit {
   @ViewChild('sidebar') sidebar!: SidebarComponent;
   cartCount = 0;
+  menuOpen = false;
 
   constructor(private router: Router, private cartService: CartService) {}
 
@@ -19,6 +20,14 @@ export class HeaderComponent implements OnInit {
     this.cartService.cart$.subscribe(items => {
       this.cartCount = items.reduce((sum, item) => sum + item.quantity, 0);
     });
+  }
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
   }
 
   openSideBarClick() {
@@ -30,21 +39,27 @@ export class HeaderComponent implements OnInit {
   }
 
   contactUs() {
+    this.closeMenu();
     this.router.navigate(['/contactus']);
   }
   cart(){
+    this.closeMenu();
     this.router.navigate(['/cart']);
   }
   trackOrder(){
+    this.closeMenu();
     this.router.navigate(['/track-order']);
   }
   products() {
+    this.closeMenu();
     this.router.navigate(['/products']);
   }
   home() {
+    this.closeMenu();
     this.router.navigate(['/']);
   }
   login(){
+    this.closeMenu();
     this.router.navigate(['/login']);
   }
 }

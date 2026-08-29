@@ -1,5 +1,5 @@
 {
-  "name": "test-makhana",
+  "name": "test-Laptop",
   "version": "0.0.0",
   "scripts": {
     "ng": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng",

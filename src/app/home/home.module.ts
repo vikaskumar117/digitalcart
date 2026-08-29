@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-import { MakhanaService } from './makhana-service.service';
+import { LaptopService } from './laptop-service.service';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { SearchPipe } from './search.pipe';
 
@@ -12,6 +12,6 @@ import { SearchPipe } from './search.pipe';
     CommonModule
   ],
   exports: [HomeComponent],
-  providers: [MakhanaService]
+  providers: [LaptopService]
 })
 export class HomeModule { }

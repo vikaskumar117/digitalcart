@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TestMakhana": {
+    "TestLaptop": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/TestMakhana",
+            "outputPath": "dist/TestLaptop",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "TestMakhana:build"
+            "browserTarget": "TestLaptop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "TestMakhana:build:production"
+              "browserTarget": "TestLaptop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TestMakhana:build"
+            "browserTarget": "TestLaptop:build"
           }
         },
         "test": {
@@ -117,18 +117,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "TestMakhana:serve"
+            "devServerTarget": "TestLaptop:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "TestMakhana:serve:production"
+              "devServerTarget": "TestLaptop:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "TestMakhana",
+  "defaultProject": "TestLaptop",
   "cli": {
     "analytics": false
   }

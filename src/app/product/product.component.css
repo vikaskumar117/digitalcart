@@ -1,0 +1,17 @@
+.home-container {
+  margin-top: 100px;
+  min-height: calc(100vh - 220px);
+  padding-bottom: 30px;
+}
+
+.pagination-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.pagination-wrap pagination-controls {
+  display: block;
+}

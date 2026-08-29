@@ -11,11 +11,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { DialogComponent } from './shared/dialog/dialog.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    DialogComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { RouterModule } from '@angular/router';
     CoreModule,
     SharedModule,
     HomeModule,
+    NgxPaginationModule,
     NgbModule
   ],
   providers: [],

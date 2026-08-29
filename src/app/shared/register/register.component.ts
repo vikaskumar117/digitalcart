@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,8 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
- input: any;
- show: boolean = true;
+  @Output() closeRegister = new EventEmitter<boolean>();
+
+  input: any;
+  show: boolean = true;
 
   public constructor(private router: Router) {
       this.input = {
@@ -26,6 +28,7 @@ export class RegisterComponent implements OnInit {
   }
 
   login(){
+    this.closeRegister.emit(false);
     this.show = false;
     this.router.navigate(['/login']);
   }

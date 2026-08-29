@@ -1,0 +1,177 @@
+[
+    {
+        "Name": "Dell XPS 13",
+        "Price": "90000",
+        "Description": "Dell XPS 13 - 13.4 inch, Intel i7, 16GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Dell Inspiron 15",
+        "Price": "45000",
+        "Description": "Dell Inspiron 15 - 15.6 inch, Intel i5, 8GB RAM, 256GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "HP Pavilion 14",
+        "Price": "52000",
+        "Description": "HP Pavilion 14 - 14 inch, AMD Ryzen 5, 8GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "HP Envy 13",
+        "Price": "76000",
+        "Description": "HP Envy 13 - 13.3 inch, Intel i7, 16GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Lenovo ThinkPad X1",
+        "Price": "120000",
+        "Description": "Lenovo ThinkPad X1 Carbon - 14 inch, Intel i7, 16GB RAM, 1TB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Lenovo IdeaPad 3",
+        "Price": "35000",
+        "Description": "Lenovo IdeaPad 3 - 15.6 inch, Intel i3, 8GB RAM, 256GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Asus ZenBook 14",
+        "Price": "68000",
+        "Description": "Asus ZenBook 14 - 14 inch, Intel i5, 8GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Asus VivoBook 15",
+        "Price": "42000",
+        "Description": "Asus VivoBook 15 - 15.6 inch, Intel i3, 8GB RAM, 256GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Acer Aspire 5",
+        "Price": "38000",
+        "Description": "Acer Aspire 5 - 15.6 inch, Intel i5, 8GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Acer Swift 3",
+        "Price": "56000",
+        "Description": "Acer Swift 3 - 14 inch, AMD Ryzen 7, 8GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Microsoft Surface Laptop 4",
+        "Price": "95000",
+        "Description": "Surface Laptop 4 - 13.5 inch, AMD Ryzen/Intel, 16GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Apple MacBook Air",
+        "Price": "115000",
+        "Description": "MacBook Air - Apple M1, 8GB RAM, 256GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Apple MacBook Pro 13",
+        "Price": "150000",
+        "Description": "MacBook Pro 13 - Apple M2, 16GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Razer Blade 15",
+        "Price": "180000",
+        "Description": "Razer Blade 15 - 15.6 inch, Intel i7, 16GB RAM, 1TB SSD, GTX/RTX GPU",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "MSI GF63",
+        "Price": "70000",
+        "Description": "MSI GF63 - 15.6 inch, Intel i5, 8GB RAM, 512GB SSD, GTX GPU",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Samsung Galaxy Book",
+        "Price": "85000",
+        "Description": "Samsung Galaxy Book - 15.6 inch, Intel i5, 8GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Google Pixelbook Go",
+        "Price": "92000",
+        "Description": "Pixelbook Go - 13.3 inch, Intel Core, 8GB RAM, 256GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Huawei MateBook X",
+        "Price": "98000",
+        "Description": "Huawei MateBook X - 13 inch, Intel i7, 16GB RAM, 512GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "LG Gram 14",
+        "Price": "105000",
+        "Description": "LG Gram 14 - 14 inch, Intel i5, 16GB RAM, 512GB SSD, Ultra-light",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Toshiba Satellite",
+        "Price": "33000",
+        "Description": "Toshiba Satellite - 15.6 inch, Intel i3, 4GB RAM, 500GB HDD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Sony Vaio",
+        "Price": "88000",
+        "Description": "Sony Vaio - 14 inch, Intel i7, 8GB RAM, 256GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Alienware m15",
+        "Price": "210000",
+        "Description": "Alienware m15 - 15.6 inch, Intel i9, 32GB RAM, 2TB SSD, RTX GPU",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "Gigabyte Aero 15",
+        "Price": "170000",
+        "Description": "Gigabyte Aero 15 - 15.6 inch, Intel i7, 16GB RAM, 1TB SSD, RTX GPU",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    },
+    {
+        "Name": "Panasonic Toughbook",
+        "Price": "125000",
+        "Description": "Panasonic Toughbook - rugged laptop, Intel i5, 8GB RAM, 256GB SSD",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop2.JPG"
+    },
+    {
+        "Name": "HP Chromebook 14",
+        "Price": "22000",
+        "Description": "HP Chromebook 14 - 14 inch, Chrome OS, 4GB RAM, 32GB eMMC",
+        "Quantity": 1,
+        "Src": "assets/laptop/laptop1.JPG"
+    }
+]

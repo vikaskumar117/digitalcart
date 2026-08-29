@@ -4,9 +4,10 @@ import { SidebarComponent } from 'src/app/sidebar/sidebar/sidebar.component';
 import { CartService } from 'src/app/shared/cart.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css'],
+    standalone: false
 })
 export class HeaderComponent implements OnInit {
   @ViewChild('sidebar') sidebar!: SidebarComponent;

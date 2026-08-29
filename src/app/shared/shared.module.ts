@@ -7,12 +7,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [FooterComponent, ContactusComponent, LoginComponent, RegisterComponent],
-  imports: [
-    CommonModule,
-    NgbModule
-  ],
-  entryComponents: [],
-  exports: [FooterComponent]
+    declarations: [FooterComponent, ContactusComponent, LoginComponent, RegisterComponent],
+    imports: [
+        CommonModule,
+        NgbModule
+    ],
+    exports: [FooterComponent]
 })
 export class SharedModule { }

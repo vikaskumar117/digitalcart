@@ -8,7 +8,7 @@ import { CartComponent } from './cart/cart.component';
 import { TrackOrderComponent } from './track-order/track-order.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductComponent },
   { path: 'cart', component: CartComponent },

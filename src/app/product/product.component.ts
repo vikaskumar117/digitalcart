@@ -3,14 +3,13 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DialogComponent } from 'src/app/shared/dialog/dialog.component';
 import { LaptopDetail } from 'src/Model/model';
 import { LaptopService } from '../home/laptop-service.service';
-import { NgxPaginationModule } from 'ngx-pagination';
 import { CartItem, CartService } from '../shared/cart.service';
 
 @Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css'],
-  providers: [LaptopDetail, NgxPaginationModule]
+    selector: 'app-product',
+    templateUrl: './product.component.html',
+    styleUrls: ['./product.component.css'],
+    standalone: false
 })
 export class ProductComponent implements OnInit {
   res: any;

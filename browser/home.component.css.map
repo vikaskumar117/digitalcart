@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/home/home/home.component.css"],
+  "sourcesContent": [".home-container {\r\n  margin-top: 100px;\r\n  min-height: calc(100vh - 220px);\r\n  padding-bottom: 30px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.hero-box {\r\n  max-width: 700px;\r\n  padding: 40px 30px;\r\n  background: #f8f9fa;\r\n  border-radius: 12px;\r\n  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);\r\n}\r\n\r\n.hero-box h1 {\r\n  margin-bottom: 15px;\r\n  font-weight: 700;\r\n}\r\n\r\n.hero-box p {\r\n  font-size: 1.1rem;\r\n  margin-bottom: 25px;\r\n}"],
+  "mappings": ";AAAA,CAAC;AACC,cAAY;AACZ,cAAY,KAAK,MAAM,EAAE;AACzB,kBAAgB;AAChB,WAAS;AACT,eAAa;AACb,mBAAiB;AACnB;AAEA,CAAC;AACC,aAAW;AACX,WAAS,KAAK;AACd,cAAY;AACZ,iBAAe;AACf,cAAY,EAAE,IAAI,KAAK,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE;AACvC;AAEA,CARC,SAQS;AACR,iBAAe;AACf,eAAa;AACf;AAEA,CAbC,SAaS;AACR,aAAW;AACX,iBAAe;AACjB;",
+  "names": []
+}

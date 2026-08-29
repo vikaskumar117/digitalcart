@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.css"],
+  "sourcesContent": [":host {\r\n  display: block;\r\n  min-height: 100vh;\r\n}\r\n\r\n.page-shell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  min-height: 100vh;\r\n  width: 100%;\r\n}\r\n\r\n.page-content {\r\n  flex: 1 0 auto;\r\n}\r\n\r\napp-footer {\r\n  margin-top: auto;\r\n  display: block;\r\n  width: 100%;\r\n}"],
+  "mappings": ";AAAA;AACE,WAAS;AACT,cAAY;AACd;AAEA,CAAC;AACC,WAAS;AACT,kBAAgB;AAChB,cAAY;AACZ,SAAO;AACT;AAEA,CAAC;AACC,QAAM,EAAE,EAAE;AACZ;AAEA;AACE,cAAY;AACZ,WAAS;AACT,SAAO;AACT;",
+  "names": []
+}

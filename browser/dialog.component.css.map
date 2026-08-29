@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/dialog/dialog.component.css"],
+  "sourcesContent": ["button {\r\n    margin-right: 8px;\r\n  }"],
+  "mappings": ";AAAA;AACI,gBAAc;AAChB;",
+  "names": []
+}

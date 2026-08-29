@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/track-order/track-order.component.css"],
+  "sourcesContent": [".empty-state {\r\n  padding: 30px;\r\n  background: #f8f9fa;\r\n  border-radius: 8px;\r\n  text-align: center;\r\n}\r\n\r\n.track-box {\r\n  background: #fff;\r\n  border: 1px solid #e5e5e5;\r\n  border-radius: 8px;\r\n  padding: 20px;\r\n}\r\n\r\n.timeline {\r\n  list-style: none;\r\n  padding-left: 0;\r\n  margin-top: 20px;\r\n}\r\n\r\n.timeline li {\r\n  padding: 10px 0;\r\n  border-left: 3px solid #ddd;\r\n  padding-left: 12px;\r\n  margin-left: 8px;\r\n  color: #666;\r\n}\r\n\r\n.timeline li.active {\r\n  color: #198754;\r\n  border-left-color: #198754;\r\n  font-weight: 600;\r\n}\r\n"],
+  "mappings": ";AAAA,CAAC;AACC,WAAS;AACT,cAAY;AACZ,iBAAe;AACf,cAAY;AACd;AAEA,CAAC;AACC,cAAY;AACZ,UAAQ,IAAI,MAAM;AAClB,iBAAe;AACf,WAAS;AACX;AAEA,CAAC;AACC,cAAY;AACZ,gBAAc;AACd,cAAY;AACd;AAEA,CANC,SAMS;AACR,WAAS,KAAK;AACd,eAAa,IAAI,MAAM;AACvB,gBAAc;AACd,eAAa;AACb,SAAO;AACT;AAEA,CAdC,SAcS,EAAE,CAAC;AACX,SAAO;AACP,qBAAmB;AACnB,eAAa;AACf;",
+  "names": []
+}

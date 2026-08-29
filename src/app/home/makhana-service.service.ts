@@ -13,14 +13,6 @@ export class MakhanaService {
   constructor(private http: HttpClient) { }
 
   getMakhanaList(): Observable<MakhanaDetail[]> {
-    return this.http.get<MakhanaDetail[]>('assets/laptop/laptopItems.json')
-      .pipe(
-        map(items => items.map(item => {
-          item.Src = (Math.random() < 0.5)
-            ? 'assets/laptop/laptop1.JPG'
-            : 'assets/laptop/laptop2.JPG';
-          return item;
-        }))
-      );
+    return this.http.get<MakhanaDetail[]>('assets/laptop/laptopItems.json');
   }
 }

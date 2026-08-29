@@ -1,13 +1,26 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: block;
+  width: 100%;
+}
+
 .toolbar {
-    /* position: absolute; */
-    /* top: 0;*/
-    /* left: 0;
-    right: 0;  */
-    /* height: 60px; */
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    /* margin-top: 550px; */
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  min-height: 60px;
+  margin: 0;
+  padding: 0 16px;
+}
+
+.toolbar p {
+  margin: 0;
+  text-align: center;
+}

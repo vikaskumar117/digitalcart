@@ -24,7 +24,7 @@ constructor(private modal: NgbModal, private makhanaService: MakhanaService){
     id: 'basicPaginate',
     itemsPerPage: 3,
     currentPage: 1,
-    totalItems: 7
+    totalItems: 25
   };
 }
 
